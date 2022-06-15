@@ -1,0 +1,35 @@
+diff --git a/sampleschema.sql b/sampleschema.sql
+index f45a8c0..170b34c 100644
+--- a/sampleschema.sql
++++ b/sampleschema.sql
+@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-06-14 21:15:17
++-- Dump completed on 2022-06-15 12:48:59
+diff --git a/stg-manasareddy002_14.6.2022_13:42.txt b/stg-manasareddy002_14.6.2022_13:42.txt
+deleted file mode 100644
+index ae10160..0000000
+--- a/stg-manasareddy002_14.6.2022_13:42.txt
++++ /dev/null
+@@ -1,10 +0,0 @@
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 5458d0f..938feb2 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-09 17:00:09
+-+-- Dump completed on 2022-06-14 13:43:57
+diff --git a/stg-manasareddy002_8.6.2022_13:41:54.txt b/stg-manasareddy002_8.6.2022_13:41:54.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/stg-manasareddy002_8.6.2022_13:44:36.txt b/stg-manasareddy002_8.6.2022_13:44:36.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/stg-manasareddy002_8.6.2022_13:46:11.txt b/stg-manasareddy002_8.6.2022_13:46:11.txt
+deleted file mode 100644
+index e69de29..0000000
