@@ -1,18 +1,29 @@
+diff --git a/copies/stg-manasareddy002_17.6.2022_12:23.sql b/copies/stg-manasareddy002_17.6.2022_12:23.sql
+index 8c1fad8..a86d450 100644
+--- a/copies/stg-manasareddy002_17.6.2022_12:23.sql
++++ b/copies/stg-manasareddy002_17.6.2022_12:23.sql
+@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-06-17 12:23:23
++-- Dump completed on 2022-06-17 12:23:37
 diff --git a/counter.json b/counter.json
-index d00491f..c227083 100644
+index c227083..56a6051 100644
 --- a/counter.json
 +++ b/counter.json
 @@ -1 +1 @@
--1
-+0
+-0
+\ No newline at end of file
++1
 \ No newline at end of file
 diff --git a/sampleschema.sql b/sampleschema.sql
-index a147cc7..8c1fad8 100644
+index 8c1fad8..a86d450 100644
 --- a/sampleschema.sql
 +++ b/sampleschema.sql
 @@ -40,4 +40,4 @@ CREATE TABLE `demo` (
  /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
  /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
  
---- Dump completed on 2022-06-17 12:19:29
-+-- Dump completed on 2022-06-17 12:23:23
+--- Dump completed on 2022-06-17 12:23:23
++-- Dump completed on 2022-06-17 12:23:37
