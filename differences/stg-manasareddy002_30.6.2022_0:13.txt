@@ -1,0 +1,19 @@
+diff --git a/counter.json b/counter.json
+index 3cacc0b..ca7bf83 100644
+--- a/counter.json
++++ b/counter.json
+@@ -1 +1 @@
+-12
+\ No newline at end of file
++13
+\ No newline at end of file
+diff --git a/sampleschema.sql b/sampleschema.sql
+index b4cd247..09d657c 100644
+--- a/sampleschema.sql
++++ b/sampleschema.sql
+@@ -39,4 +39,4 @@ CREATE TABLE `demo` (
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-06-29 23:54:18
++-- Dump completed on 2022-06-30  0:13:19
