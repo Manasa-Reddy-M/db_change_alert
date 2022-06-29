@@ -1,0 +1,29 @@
+diff --git a/counter.json b/counter.json
+index 9a03714..9d60796 100644
+--- a/counter.json
++++ b/counter.json
+@@ -1 +1 @@
+-10
+\ No newline at end of file
++11
+\ No newline at end of file
+diff --git a/sampleschema.sql b/sampleschema.sql
+index 62dd35e..6444033 100644
+--- a/sampleschema.sql
++++ b/sampleschema.sql
+@@ -26,8 +26,7 @@ CREATE TABLE `demo` (
+   `name` varchar(40) DEFAULT NULL,
+   `email` varchar(50) DEFAULT NULL,
+   `age` int(100) DEFAULT NULL,
+-  `address` varchar(100) DEFAULT NULL,
+-  `bloodgroup` varchar(10) DEFAULT NULL
++  `address` varchar(100) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ /*!40101 SET character_set_client = @saved_cs_client */;
+ /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+@@ -40,4 +39,4 @@ CREATE TABLE `demo` (
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-06-29 23:31:22
++-- Dump completed on 2022-06-29 23:52:27
