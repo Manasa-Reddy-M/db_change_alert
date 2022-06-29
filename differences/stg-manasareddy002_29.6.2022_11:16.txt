@@ -1,0 +1,216 @@
+diff --git a/attachmentcode.py b/attachmentcode.py
+deleted file mode 100644
+index bac319c..0000000
+--- a/attachmentcode.py
++++ /dev/null
+@@ -1,41 +0,0 @@
+-import smtplib
+-from os.path import basename
+-from email.mime.text import MIMEText
+-from email.mime.multipart import MIMEMultipart
+-from email.mime.application import MIMEApplication
+-
+-import socket
+-import datetime
+-e = datetime.datetime.now()
+-
+-hostname = socket.gethostname()
+-#date = f"{e.day}.{e.month}.{e.year}_{e.hour}:{e.minute}:{e.second}"
+-date = f"{e.day}.{e.month}.{e.year}_{e.hour}:{e.minute}"
+-
+-fromaddr = 'manasa.intern@phonepe.com'
+-toaddr = 'manasaman7@gmail.com'
+-subject = 'Database_Schema_alert'
+-content = 'The database schema has been changed,the below attached file contains the changes'
+-
+-msg = MIMEMultipart() # saying the module to load our data
+-msg['From'] = fromaddr
+-msg['To'] = toaddr
+-msg['Subject'] = subject
+-body = MIMEText(content, 'plain')
+-msg.attach(body)
+-
+-filename = f"{hostname}_{date}.txt"
+-with open(filename, 'r') as f:
+-    part = MIMEApplication(f.read(), Name=basename(filename))
+-    part['Content-Disposition'] = 'attachment; filename="{}"'.format(basename(filename))
+-msg.attach(part)
+-
+-server = smtplib.SMTP('smtp.gmail.com', 587)
+-server.connect("smtp.gmail.com",587)
+-server.starttls()
+-#server.login(fromaddr, 'anvlsnjyxarsvfoc')
+-server.login(fromaddr, 'mooqppareshpesjm')
+-server.send_message(msg, fromaddr, toaddr)
+-
+-server.quit()
+-
+diff --git a/counter.json b/counter.json
+index bf0d87a..62f9457 100644
+--- a/counter.json
++++ b/counter.json
+@@ -1 +1 @@
+-4
+\ No newline at end of file
++6
+\ No newline at end of file
+diff --git a/sampleschema.sql b/sampleschema.sql
+index ea0fda2..279457a 100644
+--- a/sampleschema.sql
++++ b/sampleschema.sql
+@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-06-20 15:37:01
++-- Dump completed on 2022-06-29 11:16:04
+diff --git a/stg-manasareddy002_17.6.2022_12:41.txt b/stg-manasareddy002_17.6.2022_12:41.txt
+deleted file mode 100644
+index 9a9db97..0000000
+--- a/stg-manasareddy002_17.6.2022_12:41.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..399239a 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-17 12:41:40
+diff --git a/stg-manasareddy002_17.6.2022_12:45.txt b/stg-manasareddy002_17.6.2022_12:45.txt
+deleted file mode 100644
+index 322174d..0000000
+--- a/stg-manasareddy002_17.6.2022_12:45.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..706b6d4 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-17 12:45:02
+diff --git a/stg-manasareddy002_17.6.2022_12:46.txt b/stg-manasareddy002_17.6.2022_12:46.txt
+deleted file mode 100644
+index 611c7e5..0000000
+--- a/stg-manasareddy002_17.6.2022_12:46.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..c770230 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-17 12:46:32
+diff --git a/stg-manasareddy002_17.6.2022_12:48.txt b/stg-manasareddy002_17.6.2022_12:48.txt
+deleted file mode 100644
+index e1930cb..0000000
+--- a/stg-manasareddy002_17.6.2022_12:48.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..801da0a 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-17 12:48:11
+diff --git a/stg-manasareddy002_17.6.2022_12:52.txt b/stg-manasareddy002_17.6.2022_12:52.txt
+deleted file mode 100644
+index ca83254..0000000
+--- a/stg-manasareddy002_17.6.2022_12:52.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..750b678 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-17 12:52:20
+diff --git a/stg-manasareddy002_20.6.2022_15:32.txt b/stg-manasareddy002_20.6.2022_15:32.txt
+deleted file mode 100644
+index b8cb330..0000000
+--- a/stg-manasareddy002_20.6.2022_15:32.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/counter.json b/counter.json
+-index d8263ee..e440e5c 100644
+---- a/counter.json
+-+++ b/counter.json
+-@@ -1 +1 @@
+--2
+-\ No newline at end of file
+-+3
+-\ No newline at end of file
+-diff --git a/sampleschema.sql b/sampleschema.sql
+-index 30d6825..e4e7fd9 100644
+---- a/sampleschema.sql
+-+++ b/sampleschema.sql
+-@@ -40,4 +40,4 @@ CREATE TABLE `demo` (
+- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+- 
+---- Dump completed on 2022-06-17 12:37:57
+-+-- Dump completed on 2022-06-20 15:32:58
